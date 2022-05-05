@@ -45,7 +45,7 @@ void image_show(GImage &image, uint8_t* data, size_t len, float zoom=100 /*10-10
 
 void setup() {
   Serial.begin(115200); Serial.println();
-  ThaiID_Reader.begin(9600,SERIAL_8N1, SERIAL2_RX, SERIAL2_TX);
+  ThaiID_Reader.begin(115200,SERIAL_8N1, SERIAL2_RX, SERIAL2_TX);
   
   BlynkGO.begin();
   BlynkGO.fillScreen(TFT_RED, TFT_ORANGE);
